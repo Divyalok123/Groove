@@ -1,0 +1,201 @@
+/* ------- NAVIGATION BAR ------- */
+
+#nav {
+	width: 100%;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#nav-right, #nav-left, #nav-mid {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#nav-right {
+	width: 605px;
+	justify-self: right;
+	justify-content: space-between;
+}
+
+#nav-left {
+	width: 350px;
+	justify-self: left;
+	justify-content: space-between;
+}
+
+#nav-mid {
+	justify-self: center;
+	justify-content: center;
+	margin-left: 80px;
+}
+
+/* Website Logo */
+#logo {
+	height: 76px;
+	width: 76px;
+}
+
+/* favourites link */
+#fav {
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	line-height: 40px;
+	letter-spacing: 1.6px;
+	cursor: pointer;
+}
+
+#fav:hover {
+	color: burlywood;
+	transition: 0.14s all ease-out;
+}
+
+/* Site Name at the middle */
+#name {
+	font-size: 38px;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	line-height: 60px;
+	letter-spacing: 1px;
+	background-image: linear-gradient(90deg, white, rgb(83, 81, 81));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* -- Right of navigation bar -- */
+
+/* Search Bar */
+#search-bar {
+	flex-shrink: inherit;
+	width: 210px;
+	border: 0.2px solid white;
+	border-radius: 18px;
+	padding: 5px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 8%);
+}
+
+/* search Bar */
+#search-bar i {
+	font-size: 16px;
+	color: white;
+}
+
+#search {
+	font-size: 15px;
+	background: transparent;
+	border: none;
+	color: white;
+	font-family: monospace;
+}
+
+/* Notification Bell */
+#notif {
+	font-size: 32px;
+	color: white;
+	cursor: pointer;
+}
+
+/* User Image on Navigation Bar */
+#user {
+	float: right;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#user-img {
+	object-fit: cover;
+	height: 80px;
+	width: 80px;
+}
+
+@media (max-width: 1250px) {
+	#nav-right {
+		width: 750px;
+		transition: 0.3s width;
+	}
+}
+
+@media (max-width: 1000px) {
+	#nav-left {
+		width: 430px;
+	}
+
+	#nav-right {
+		width: 800px;
+	}
+
+	#nav-mid {
+		margin-left: 50px;
+	}
+}
+
+@media (max-width: 850px) {
+	#search-bar {
+		width: 170px;
+		padding: 4px;	
+		transition: 0.2s width;
+	}
+
+	#search {
+		font-size: 15px;
+	}
+
+	#search {
+		width: 118px;
+	}
+
+	#nav-mid {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 700px)
+{
+	#nav-mid {
+		margin-left: 10px;
+		transition: 0.3s all;
+	}
+	#search-bar {
+		display: none;
+	}
+
+	#nav {
+		justify-content: space-between;
+	}
+
+	#nav-right {
+		justify-content: right;
+		justify-self: right;
+		width: 120px;
+	}
+
+	#nav-left {
+		justify-content: space-between;
+		justify-self: left;
+		width: 180px;
+	}
+}
+
+@media (max-width: 550px) {
+	#nav {
+		padding: 5px 15px;
+		transition: 0.2s padding;
+	}
+
+	#nav-mid {
+		display: none;
+	}
+}
