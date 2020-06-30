@@ -11,6 +11,11 @@ a {
 }
 
 body {
-	background-color: rgb(20, 16, 48);
+	/* background-color: rgb(20, 16, 48); */
+	background: url(../assets/background3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 

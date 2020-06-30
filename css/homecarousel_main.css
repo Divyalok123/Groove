@@ -1,0 +1,78 @@
+/* ----- Carousel ----- */
+
+#middle-block {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#main {
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#queue {
+    display: inline-block;
+	width: 20%;
+    margin: 0 auto;
+}
+
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img {
+    height: 65%;
+    width: 28%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.carousel-img:nth-child(2) {
+    z-index: 100;
+    transform: scaleX(1.2) scaleY(1.1);
+}
+
+.carousel-img-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover contain;
+    box-shadow: 0 0 10px 1px rgba(96, 107, 112, 40%);   
+}
+
+#carousel:hover > * {
+    box-shadow: 0 0 400px 2px grey inset;
+    transform: scale(1);
+}
+
+#carousel:hover > .carousel-img {
+    box-shadow: 0 0 400px 2px grey inset;
+}
+
+#carousel:hover > .carousel-img:nth-child(1){
+    margin-right: -30px;
+}
+
+#carousel:hover > .carousel-img:nth-child(3){
+    margin-left: -30px;
+}
+
+#carousel:hover > .carousel-img:hover  {
+    transform: scaleY(1.2) scaleX(1.45);
+    z-index: 300;
+    opacity: 120%;
+}
+

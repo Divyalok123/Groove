@@ -42,6 +42,24 @@
 #logo {
 	height: 76px;
 	width: 76px;
+	animation-name: fluct;
+	animation-duration: 1.4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#logo:hover {
+	animation-play-state: paused;
+}
+
+@keyframes fluct {
+	from {
+		transform: rotate(-360deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
 }
 
 /* favourites link */
@@ -54,7 +72,7 @@
 }
 
 #fav:hover {
-	color: burlywood;
+	color: rgb(141, 105, 57);
 	transition: 0.14s all ease-out;
 }
 
@@ -87,23 +105,36 @@
 /* search Bar */
 #search-bar i {
 	font-size: 16px;
-	color: white;
+	color: rgb(97, 92, 92);
 }
 
 #search {
 	font-size: 15px;
 	background: transparent;
 	border: none;
-	color: white;
-	font-family: monospace;
+	color: rgb(53, 50, 50);
+	font-family: 'Roboto', monospace;
 }
 
 /* Notification Bell */
 #notif {
+	position: relative;
 	font-size: 32px;
-	color: white;
+	color: rgb(163, 10, 10);
 	cursor: pointer;
 }
+
+#notif > #notif-circle {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: rgb(240, 199, 63);
+	border-radius: 50%;
+	border: 2.4px solid rgb(78, 230, 230);
+	top: 8px;
+	left: 24px;
+}
+
 
 /* User Image on Navigation Bar */
 #user {
