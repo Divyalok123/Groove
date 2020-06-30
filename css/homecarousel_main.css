@@ -1,4 +1,9 @@
+/* ------- Main ------- */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /* ----- Carousel ----- */
+
+
 
 #middle-block {
     width: 95%;
@@ -75,4 +80,141 @@
     z-index: 300;
     opacity: 120%;
 }
+
+/* --Common-classes-- */
+
+/* For the header of each block */
+.list-header {
+    font-weight: bold;
+    color: rgb(71, 59, 59);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 10px 0;
+    font-family: 'Roboto Slab','Roboto','MuseoModerno', cursive;
+}
+
+/* For p tags in latest rel grid elements (excluding name) */
+.style-text-1 {
+    font-family: 'roboto', monospace, sans-serif;
+}
+
+/* For header of each latest-rel header */
+.style-text-2 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+.style-text-3 {
+    font-family: 'Open Sans', helvetica, monospace, sans-serif;
+}
+/* For each block like latest/artist etc. */
+.blocks {
+    padding: 5px 30px;
+    margin: 20px 0;
+}
+
+/* For icons */
+i {
+    cursor: pointer;
+}
+
+/* ---------- Latest Release ---------- */
+
+
+#latest-rel-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding: 20px 30px;
+}
+
+.latest-grid-item {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+}
+
+.latest-grid-item > * {
+    margin: 0 5px;
+}
+
+.latest-redundant-div {
+    width: 60px;
+}
+
+.latest-grid-img {
+    height: 90px;
+    width: 90px;
+    position: relative;
+}
+
+.latest-grid-img > i {
+    display: none;
+    position: absolute;
+    top: 26%;
+    left: 26%;
+    font-size: 40px;
+    /* transform: translateX(-10px) translateY(-5px); */
+}
+
+.latest-grid-img:hover > i {
+    display: block;
+    color: white;
+    z-index: 100;
+}
+
+.latest-grid-img:hover > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(45deg, rgba(153, 151, 151, 80%), rgba(97, 89, 89, 60%));
+    /* background-color: white; */
+    /* box-shadow: 0 0 30px 3px grey inset; */
+    z-index: 50;
+}
+
+.latest-grid-img > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.latest-grid-icon {
+    align-self: flex-start;
+    text-align: end;
+    position: relative;
+}
+
+.latest-dropdown {
+    display: none;
+    width: 110px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    background-image: linear-gradient(45deg, lightgray, rgb(9, 206, 206));
+}
+
+.latest-dropdown p {
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
+
+.latest-dropdown p:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(9, 206, 206), lightgray);
+}
+
+.latest-grid-icon:hover .latest-dropdown {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 200;
+}
+
+
+/* -------- Popular Artists -------- */
 

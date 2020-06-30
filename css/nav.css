@@ -10,6 +10,8 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
+	z-index: 1000;
+	/* background: linear-gradient(45deg, blue, white, rgb(30, 214, 214)); */
 }
 
 #nav-right, #nav-left, #nav-mid {
