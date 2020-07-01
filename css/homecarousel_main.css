@@ -4,25 +4,6 @@
 /* ----- Carousel ----- */
 
 
-
-#middle-block {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-#main {
-    display: inline-block;
-    width: 70%;
-    margin: 0 auto;
-}
-
-#queue {
-    display: inline-block;
-	width: 20%;
-    margin: 0 auto;
-}
-
 #carousel {
     position: relative;
     width: 100%;
@@ -218,3 +199,309 @@ i {
 
 /* -------- Popular Artists -------- */
 
+#artists {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.artist {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 4px 0.4px grey;
+    margin: 5px;
+}
+
+.artist:hover {
+    box-shadow: none;
+    transition: 0.2s all;
+}
+
+.artist > img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artist > div {
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    z-index: 100;
+    background: linear-gradient(45deg, rgb(218, 215, 215, 70%), rgb(129, 121, 121, 70%), transparent);
+}
+
+.artist i {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    left: 35%;
+    top: 34%;
+    display: none;
+    transition: 1s all;
+    z-index: 200;
+}
+
+.artist:hover > div, .artist:hover > i {
+    display: block;
+}
+
+/* -- stations -- */
+
+#stations {
+    padding: 20px 35px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgb(38, 190, 190), transparent);
+}
+
+#stations-l-box {
+    width: 140px;
+    height: 110px;
+    position: relative;
+    /* background-color: grey; */
+}
+
+#stations-l-box #stations-l-box-1 {
+    width: 100%;
+    margin-top: 11.5%;
+    height: 70%;
+    position: absolute;
+    background-color: rgb(251, 255, 0);
+    z-index: 100;
+}
+
+#stations-l-box #stations-l-box-2 {
+    width: 85%;
+    height: 86%;
+    margin: 6% 7% 0 7%;
+    position: absolute;
+    z-index: 200;
+    background-color: rgb(199, 170, 9);
+}
+
+#stations-l-box #stations-l-box-3 {
+    width: 70%;
+    height: 100%;
+    margin: 0 15%;
+    z-index: 300;
+    background-color: rgb(233, 57, 13);
+    position: absolute;
+    object-fit: cover;
+}
+
+#stations-l-box-3 img {
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    left: 24%;
+    top: 18%;
+    position: absolute;
+    z-index: 1000; 
+    border-radius: 50%; 
+}
+
+#stations-l-box-3 p {
+    position: relative;
+    top: 80px;
+    left: 25px;
+    font-size: 12px;
+    color: white;
+    font-family: 'roboto',sans-serif;
+    z-index: 900;
+}
+
+.station {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 4px 1.3px lightgray;
+}
+
+.station > img {
+    object-fit: cover;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.station > p {
+    position: absolute;
+    color: rgba(48, 44, 44, 120%);
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    top: 39px;
+    align-items: center;
+    z-index: 300;
+    font-family: 'roboto', Verdana, sans-serif;
+}
+
+.station > div {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(241, 222, 191, 30%);
+}
+
+/* ------ Music Types Block ----- */
+
+#music-type {
+    margin-top: 40px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .music-type-item {
+    width: 31%;
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0.4px grey;
+    background-size: cover;
+    overflow: hidden;
+} */
+
+.music-type-child {
+    width: 300px;
+    height: 190px;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 0 4px 1px grey;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.music-type-child:nth-child(1) {
+    background-image: url(../assets/party.jpg);
+}
+
+.music-type-child:nth-child(2) {
+    background-image: url(../assets/electronic.jpg);
+}
+
+.music-type-child:nth-child(3) {
+    background-image: url(../assets/poster2.png);
+}
+
+
+.music-type-child > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    left:0;
+    margin: 0;
+    top: 42%;
+    font-size: 25px;
+    transition: none;
+    color: rgb(223, 221, 221);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.music-type-child:hover {
+    background-size: 130%;
+}
+
+
+/* ----- Latest English/Hindi Block ----- */
+
+.latest {
+    margin-top: 40px;
+    padding: 10px 30px;
+}
+
+.latest-block {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.latest-item {
+    width: 140px;
+    height: 200px;
+}
+
+.latest-item div {
+    cursor: pointer;
+}
+
+.latest-item > div img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    box-shadow: 0 0 4px 1px grey;
+    transition: 0.4s all;
+}
+
+.latest-item > div img:hover {
+    box-shadow: none;
+}
+
+
+/* Responsiveness check */
+
+@media (max-width: 1100px) {
+    #main {
+        width: 100%;
+    }
+
+    #queue {
+        width: 100%;
+    }
+
+    .latest-redundant-div {
+        width: 100px;
+    }
+
+    #artists {
+        justify-content: center;
+    }
+
+    .artist {
+        transform: scale(0.9);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #latest-rel-list {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .carousel-img {
+        height: 50%;
+    }
+}

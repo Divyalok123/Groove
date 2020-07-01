@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* ----- The queue block on the left ----- */
+
+/* -- Queue Header -- */
+#queue-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px 2px;
+}
+
+.inline {
+    display: inline;
+}
+
+#queue-left p {
+    font-size: 25px;
+}
+
+#queue-right {
+    word-spacing: 10px;
+    line-height: 23px;
+    position: relative;
+}
+
+#queue-right p {
+    cursor: pointer;
+}
+
+#queue-header-icon {
+    background-color: papayawhip;
+    border-radius: 5px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    display: none;
+    margin-top: 5px;
+    box-shadow: 0 0 4px 0.3px rgb(231, 166, 100);
+}
+
+#queue-header-icon p {
+    border-bottom: 1px solid black;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+#queue-header-icon p:nth-child(1) {
+    border-radius: 5px 5px 0 0;
+}
+#queue-header-icon p:nth-child(2) {
+    border-radius: 0 0 0 0;
+}
+#queue-header-icon p:nth-child(3) {
+    border-radius: 0 0 5px 5px;
+}
+
+#queue-header-icon p:hover {
+    background-color: peru;
+}
+
+#queue-header-icon p:last-child {
+    border-bottom: none;
+}
+
+#queue-right:hover > div {
+    display: block;
+}
+
+/* --- Queue List --- */
+
+#queue-list {
+    margin-top: 25px;
+    padding: 5px 0;
+}
+
+.rotater {
+    transform: rotate(90deg);
+}
+

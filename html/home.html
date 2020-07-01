@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/homecarousel_main.css" type="text/css" />
     <link rel="stylesheet" href="../css/controls.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/queue.css" type="text/css" />
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                 <!-- Search Bar -->
                 <label><i style="transform: rotate(-90deg); margin-top: 3.5px; font-size: 17px;"
                         class="las la-search"></i></label>
-                <input type="text" id="search" />
+                <input type="text" id="search" placeholder="Search..." />
                 <label><i class="fas fa-microphone"></i></label>
             </div>
 
@@ -54,6 +55,7 @@
     <div id="middle-block">
         <!-- Main Panel -->
         <div id="main">
+
             <!-- Home Carousel -->
             <div id="carousel">
                 <div class="carousel-img">
@@ -66,6 +68,7 @@
                     <img alt="carousel-img-2" class="carousel-img-img" src="../assets/party.jpg">
                 </div>
             </div>
+
             <!--Latest-releases-->
             <div id="latest-rel" class="blocks">
                 <p id="latest-rel-header" class="list-header">Latest Release</p>
@@ -83,7 +86,7 @@
                             <p class="style-text-1">June 20</p>
                         </div>
                         <div class="latest-redundant-div"></div>
-                        <div class="latest-grid-icon">   
+                        <div class="latest-grid-icon">
                             <i class="fas fa-ellipsis-h"></i>
                             <div class="latest-dropdown">
                                 <p class="style-text-3">Play</p>
@@ -104,7 +107,7 @@
                             <p class="style-text-1">June 20</p>
                         </div>
                         <div class="latest-redundant-div"></div>
-                        <div class="latest-grid-icon">   
+                        <div class="latest-grid-icon">
                             <i class="fas fa-ellipsis-h"></i>
                             <div class="latest-dropdown">
                                 <p class="style-text-3">Play</p>
@@ -125,7 +128,7 @@
                             <p class="style-text-1">June 20</p>
                         </div>
                         <div class="latest-redundant-div"></div>
-                        <div class="latest-grid-icon">   
+                        <div class="latest-grid-icon">
                             <i class="fas fa-ellipsis-h"></i>
                             <div class="latest-dropdown">
                                 <p class="style-text-3">Play</p>
@@ -146,7 +149,7 @@
                             <p class="style-text-1">June 20</p>
                         </div>
                         <div class="latest-redundant-div"></div>
-                        <div class="latest-grid-icon">   
+                        <div class="latest-grid-icon">
                             <i class="fas fa-ellipsis-h"></i>
                             <div class="latest-dropdown">
                                 <p class="style-text-3">Play</p>
@@ -158,22 +161,255 @@
                     </div>
                 </div>
             </div>
+
             <!--Popular Artists-->
             <div id="popular" class="blocks">
                 <p id="popular-art-header" class="list-header">Popular Artists</p>
                 <div id="artists">
-                    <div class="artist"></div>
-                    <div class="artist"></div>
-                    <div class="artist"></div>
-                    <div class="artist"></div>
-                    <div class="artist"></div>
-                    <div class="artist"></div>
+                    <a href="playlist.html">
+                        <div class="artist">
+                            <div></div>
+                            <i class="fas fa-play"></i>
+                            <img src='../assets/artist1.jpg'>
+                        </div>
+                    </a>
+                    <a href="playlist.html">
+                        <div class="artist">
+                            <div></div>
+                            <i class="fas fa-play"></i>
+                            <img src='../assets/artist2.png'>
+                        </div>
+                    </a>
+                    <a href="playlist.html">
+                        <div class="artist">
+                            <div></div>
+                            <i class="fas fa-play"></i>
+                            <img src='../assets/artist3.jpg'>
+                        </div>
+                    </a>
+                    <a href="playlist.html">
+                        <div class="artist">
+                            <div></div>
+                            <i class="fas fa-play"></i>
+                            <img src='../assets/artist4.jpg'>
+                        </div>
+                    </a>
+                    <a href="playlist.html">
+                        <div class="artist">
+                            <div></div>
+                            <i class="fas fa-play"></i>
+                            <img src='../assets/artist5.jpg'>
+                        </div>
+                    </a>
+                    <a href="playlist.html">
+                        <div class="artist">
+                            <div></div>
+                            <i class="fas fa-play"></i>
+                            <img src='../assets/artist6.jpg'>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!---Music Stations-->
+            <div id="stations" class="blocks">
+                <div id='stations-l-box'>
+                    <div id="stations-l-box-1"></div>
+                    <div id="stations-l-box-2"></div>
+                    <div id="stations-l-box-3">
+                        <img src="../assets/station.jpg">
+                        <p>Stations</p>
+                    </div>
+                </div>
+                <div class="station">
+                    <p>Rock</p>
+                    <div></div>
+                    <img src="../assets/rock.jpg">
+                </div>
+                <div class="station">
+                    <p>Pop</p>
+                    <div></div>
+                    <img src="../assets/back4.jpg">
+                </div>
+                <div class="station">
+                    <p>Retro</p>
+                    <div></div>
+                    <img src="../assets/back1.jpg">
+                </div>
+                <div class="station">
+                    <p>Love</p>
+                    <div></div>
+                    <img src="../assets/back7.jpg">
+                </div>
+                <div class="station">
+                    <p>Classic</p>
+                    <div></div>
+                    <img src="../assets/back6.jpg">
+                </div>
+                <div class="station">
+                    <p>Chill</p>
+                    <div></div>
+                    <img src="../assets/back5.jpeg">
+                </div>
+            </div>
+
+            <!--For types of musics-->
+            <div id="music-type" class="blocks">
+                <div class="music-type-child">
+                    <p>Party</p>
+                </div>
+                <div class="music-type-child">
+                    <p>Electronic</p>
+                </div>
+                <div class="music-type-child">
+                    <p>Chill</p>
+                </div>
+            </div>
+
+            <!--- Latest english block-->
+            <div id="latest-english" class="blocks latest">
+                <p class="latest-p list-header">Latest English</p>
+                <div class="latest-block">
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_4.png">
+                        </div>
+                        <p class="style-text-2">Dunno</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_4.png">
+                        </div>
+                        <p class="style-text-2">Dunno</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_4.png">
+                        </div>
+                        <p class="style-text-2">Dunno</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_4.png">
+                        </div>
+                        <p class="style-text-2">Dunno</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_4.png">
+                        </div>
+                        <p class="style-text-2">Dunno</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_4.png">
+                        </div>
+                        <p class="style-text-2">Dunno</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="latest-hindi" class="blocks latest">
+                <p class="latest-p list-header">Latest Hindi</p>
+                <div class="latest-block">
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_2.jpg">
+                        </div>
+                        <p class="style-text-2">Pata Ni</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_2.jpg">
+                        </div>
+                        <p class="style-text-2">Pata Ni</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_2.jpg">
+                        </div>
+                        <p class="style-text-2">Pata Ni</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_2.jpg">
+                        </div>
+                        <p class="style-text-2">Pata Ni</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_2.jpg">
+                        </div>
+                        <p class="style-text-2">Pata Ni</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
+                    <div class="latest-item">
+                        <div>
+                            <img src="../assets/mp_img_2.jpg">
+                        </div>
+                        <p class="style-text-2">Pata Ni</p>
+                        <p class="style-text-3">July 2020</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Side Panel (Queue) -->
+        <!----- Side Panel (Queue) ----->
         <div id="queue">
+            <div id="queue-header">
+                <div id="queue-left" class="style-text-1">
+                    <p>Playlist</p>
+                </div>
+                <div id="queue-right" class="style-text-2">
+                    <p class="inline">Queue</p>
+                    <i class="fas fa-angle-down inline"></i>
+                    <div id="queue-header-icon">
+                        <p>Play</p>
+                        <p>Shuffle</p>
+                        <p>Append</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="queue-list">
+                <div class="queue-list-item">
+                    <div>
+                        <p>01</p>
+                        <!-- <i class="fas fa-align-right rotater"></i> -->
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div>
+
+                    </div>
+                    <div></div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+                <div class="queue-list-item"></div>
+            </div>
         </div>
     </div>
     <!---------------------------------------------------------------->
