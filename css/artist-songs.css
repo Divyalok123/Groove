@@ -1,0 +1,275 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&family=Nunito&family=Open+Sans&family=Orbitron:wght@500&family=Rubik&family=Work+Sans&display=swap");
+
+/* ------ Artist and his/her songs ------ */
+
+::selection {
+    background-color: rgb(119, 235, 229);
+    color: black;
+}
+
+/* Storing the fonts I'll be using */
+.muli {
+	font-family: "Muli", sans-serif;
+}
+.nunito {
+	font-family: "Nunito", sans-serif;
+}
+.open {
+	font-family: "Open Sans", sans-serif;
+}
+.orbit {
+	font-family: "Orbitron", sans-serif;
+}
+.rubik {
+	font-family: "Rubik", sans-serif;
+}
+.work {
+	font-family: "Work Sans", sans-serif;
+}
+
+.ubuntu {
+    font-family: 'ubuntu', sans-serif;
+}
+
+.muse {
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.robo-slab {
+    font-family: 'roboto slab', sans-serif;
+}
+
+/* Storing common font-color */
+.white {
+	color: white;
+}
+
+.limgrey {
+	color: rgb(216, 178, 178);
+}
+
+.dgrey {
+	color: rgb(202, 198, 198);
+}
+
+/* Top Artist Box */
+#artist-box {
+	height: 290px;
+	width: 90%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+    background-color: rgba(29, 28, 27, 0.8);
+    box-shadow:-1px 0 9px 0.1px white inset;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#band-image {
+	height: 290px;
+	width: 350px;
+	background-image: url(../assets/dragon1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 -12px 23px 1px lightgrey inset;
+}
+
+#band-details {
+	width: 60%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* Name and followers text */
+#band-name-foll {
+	width: 100%;
+}
+
+#band-name-foll > * {
+	display: inline-block;
+}
+
+/* Followers text */
+#band-foll {
+	float: right;
+	margin-right: 5px;
+}
+
+/* Box Buttons and etc */
+
+.band-button {
+    padding: 7px 30px;
+    cursor: pointer;
+    margin: 0 4px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 3px 0.1px rgb(93, 241, 252);
+    border: none;
+    transition: 0.25s all;
+    opacity: 90%;
+    background-color: lightskyblue;
+    background: linear-gradient(75deg, white, lightskyblue);
+}
+
+.band-button:hover {
+    opacity: 100%;
+    box-shadow: none;
+    background: linear-gradient(75deg, white, rgb(174, 214, 240), lightskyblue);
+}
+
+#band-rem-det {
+    margin-top: 7px;
+}
+
+#band-rem-det > * {
+    display: inline-block;
+}
+
+#band-rem-det p {
+    line-height: 20px;
+    width: 65px;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#band-rem-det p:nth-child(1) {
+    margin-right: -10px;
+}
+
+#band-rem-det p:nth-child(3) {
+    margin-left: -10px;
+}
+
+#band-rem-det > div {
+    border: 1.2px solid white;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    width:15px;
+    transform: rotate(-90deg);
+}
+
+/* Songs List */
+
+#artist-songs-list {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.songs-list-item {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 0 0 6px 0;
+    color: white;
+    overflow-y: auto;
+    box-shadow: 0 0 3px 0.8px grey;
+    border-radius: 4px;
+    background: linear-gradient(45deg, rgb(212, 209, 209), rgb(228, 206, 206), rgb(216, 212, 212));
+    align-items: center;
+}
+
+.songs-list-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.songs-list-num {
+    position: relative;
+    transition: 0.4s all ease-in-out;
+    margin: 0 2px;
+}
+
+/* .songs-list-num > i{
+    position: absolute;
+    top: 6px;
+    z-index: 100;
+    color: rgb(97, 10, 10);
+    display: none;
+} */
+
+.songs-list-item:hover {
+    transition: 0.4s all ease-in-out;
+    background: linear-gradient(45deg, lightgray, lightgray, grey, grey);
+}
+
+.songs-list-num {
+    width: 18px;
+}
+
+.songs-list-item > * {
+    margin: 0 5px;
+}
+
+.songs-list-img {
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 2px 0.4px grey;
+    position: relative;
+}
+
+.songs-list-img > img {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.songs-list-img > i {
+    position: absolute;
+    font-size: 40px;
+    color: rgb(173, 167, 167);
+    left: 13px;
+    top: 10px;
+    display: none;
+    z-index: 100;
+    transition: 0.4s all;
+}
+
+.songs-list-img:hover > i {
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0.2px white;
+}
+
+.songs-list-icon {
+    width: 150px;
+}
+
+.songs-list-icon > i {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 4px;
+}
+
+.songs-list-icon > i:hover {
+    color: cyan;
+}
+
+
+@media (max-width: 1200px) {
+
+    #artist-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #band-image, #band-details {
+        display: block;
+        width: 100%;
+    }
+}

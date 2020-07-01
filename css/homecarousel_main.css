@@ -100,7 +100,6 @@ i {
 
 /* ---------- Latest Release ---------- */
 
-
 #latest-rel-list {
     margin-top: 20px;
     display: grid;
@@ -273,6 +272,7 @@ i {
     width: 140px;
     height: 110px;
     position: relative;
+    margin: 5px 0;
     /* background-color: grey; */
 }
 
@@ -332,6 +332,7 @@ i {
     cursor: pointer;
     position: relative;
     box-shadow: 0 0 4px 1.3px lightgray;
+    margin: 5px 5px;
 }
 
 .station > img {
@@ -365,8 +366,9 @@ i {
 /* ------ Music Types Block ----- */
 
 #music-type {
-    margin-top: 40px;
-    padding: 10px 30px;
+    width: 100%;
+    margin: 40px 20px 0 0;
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -374,26 +376,17 @@ i {
     align-items: center;
 }
 
-/* .music-type-item {
-    width: 31%;
-    height: 190px;
-    border-radius: 5px;
-    box-shadow: 0 0 4px 0.4px grey;
-    background-size: cover;
-    overflow: hidden;
-} */
-
 .music-type-child {
     width: 300px;
     height: 190px;
     cursor: pointer;
     position: relative;
-    margin: 0;
     border-radius: 5px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    margin: 5px;
     box-shadow: 0 0 4px 1px grey;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -443,13 +436,14 @@ i {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .latest-item {
     width: 140px;
     height: 200px;
+    margin: 5px;
 }
 
 .latest-item div {
@@ -494,11 +488,15 @@ i {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
     #latest-rel-list {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
+    }
+
+    .latest-redundant-div {
+        width: 40%;
     }
 
     .carousel-img {

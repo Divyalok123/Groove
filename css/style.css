@@ -39,15 +39,10 @@ body {
 	margin: 0 auto;
 	height: 500px;
 	box-sizing: border-box;
-	border: 1px solid black;
 	position: fixed;
 	display: inline-block;
 	padding: 10px;
 	margin: 15px 20px 0 20px;
-	overflow-y: auto;
-	overflow-x: hidden;
-	scroll-snap-align: center;
-	overscroll-behavior: contain; /* to not scroll the other div on this div's completion */
 }
 
 *::-webkit-scrollbar {

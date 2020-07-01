@@ -1,0 +1,748 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Groove</title>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fcba9de078.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../css/homecarousel_main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/controls.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/queue.css" type="text/css" />
+    <link rel="stylesheet" href="../css/artist-songs.css" type="text/css" />
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <div id="nav">
+        <div id="nav-left">
+            <!-- Logo and favourites link -->
+            <a href="#home"><img src="../assets/logo.png" id="logo" alt="logo" /></a>
+            <a href="#favourites" id="fav"><span>Favourites</span></a>
+        </div>
+
+        <div id="nav-mid">
+            <a href="#home"><span id="name">Groove</span></a>
+        </div>
+
+        <div id="nav-right">
+            <div id="search-bar">
+                <!-- Search Bar -->
+                <label><i style="transform: rotate(-90deg); margin-top: 3.5px; font-size: 17px;"
+                        class="las la-search"></i></label>
+                <input type="text" id="search" placeholder="Search..." />
+                <label><i class="fas fa-microphone"></i></label>
+            </div>
+
+            <div id="notif">
+                <!-- Notification Icon -->
+                <i class="fi-xnsuxl-bell-solid"></i>
+                <div id="notif-circle"></div>
+            </div>
+
+            <div id="user">
+                <!-- User Image -->
+                <img src="../assets/user.jpg" alt="user" id="user-img" />
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------  Middle Block  ----------------------->
+    <div id="middle-block">
+        <div id="main">
+
+            <!-- Top Box Representing The Band  -->
+            <div id="artist-box">
+                <!-- Band Image container -->
+                <div id="band-image"></div>
+                <!-- Band Details -->
+                <div id="band-details">
+                    <!-- Band-Name/Followers -->
+                    <div id="band-name-foll">
+                        <div id="band-name">
+                            <p class="muli white" style="font-size: 30px;">Imagine Dragons</p>
+                            <p class="nunito dgrey">Pop Band</p>
+                        </div>
+                        <div id="band-foll">
+                            <p class="work dgrey" style="font-size: 12px;">1000 Followers</p>
+                        </div>
+                    </div>
+                    <!-- About Band -->
+                    <div id="band-about">
+                        <p class="muli dgrey" style="font-size: small; margin: 10px 2px;">
+                            Imagine Dragons is an American pop rock band from Las Vegas, Nevada, consisting of lead
+                            singer Dan Reynolds, lead guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel
+                            Platzman.
+                            The band first gained exposure with the release of their single "It's Time", followed by
+                            their award-winning debut studio album Night Visions (2012), which resulted in the
+                            chart-topping singles "Radioactive" and "Demons".
+                        </p>
+                    </div>
+                    <!-- Button elements -->
+                    <div id="band-rem">
+                        <div id="band-rem-buttons">
+                            <button type="submit" value="play-all" id="play-button" class="band-button robo-slab">
+                                Play All
+                            </button>
+                            <button type="submit" value="follow" id="follow-band" class="band-button robo-slab">
+                                Follow
+                            </button>
+                        </div>
+                        <div id="band-rem-det">
+                            <p class="dgrey ubuntu">70 Tracks</p>
+                            <div></div>
+                            <p class="dgrey ubuntu">15 Albums</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artists Songs Container -->
+            <div id="artist-songs-list">
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Natural</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="songs-list-item">
+                    <div class="songs-list-num">
+                        <p class="style-text-2" style="color: rgb(97, 10, 10);">01</p>
+                    </div>
+                    <div class="songs-list-img">
+                        <img src="../assets/dragon-img-1.jpg">
+                        <i class="las la-play"></i>
+                    </div>
+                    <div class="songs-list-name" style="margin-left: 11px;">
+                        <p class="style-text-2" style="font-size: 18px; color: rgb(97, 10, 10);">Players</p>
+                        <p class="style-text-3" style="font-size: 12px; color: rgb(49, 22, 22);">the_Play</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 50%;"></div>
+                    <div class="songs-list-time muli">
+                        <p style="color: rgb(56, 54, 54);">4:14</p>
+                    </div>
+                    <div class="songs-list-redun" style="width: 100%;"></div>
+                    <div class="songs-list-icon">
+                        <i class="lar la-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----- Side Panel (Queue) ----->
+        <div id="queue">
+            <div id="queue-header">
+                <div id="queue-left" class="style-text-1">
+                    <p>Playlist</p>
+                </div>
+                <div id="queue-right" class="style-text-2">
+                    <p class="inline">Queue</p>
+                    <i class="fas fa-angle-down inline"></i>
+                    <div id="queue-header-icon">
+                        <p>Play</p>
+                        <p>Shuffle</p>
+                        <p>Append</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="queue-list">
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">01</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">02</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back1.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">03</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">04</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back6.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">05</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">05</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back1.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">06</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">07</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back1.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">08</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">09</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back1.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">10</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">11</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back6.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">12</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/relax.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-list-item">
+                    <div class="queue-list-num">
+                        <p class="style-text-2">13</p>
+                        <!-- <i class="fas fa-align-right rotate-90"></i> -->
+                    </div>
+                    <div class="queue-list-img">
+                        <i class="las la-play"></i>
+                        <img src="../assets/back1.jpg">
+                    </div>
+                    <div class="queue-list-name">
+                        <p class="style-text-2">Players</p>
+                        <p class="style-text-3">the_Play</p>
+                    </div>
+                    <div class="queue-list-redun" style="width: 100%;"></div>
+                    <div class="queue-list-icon">
+                        <i class="lar la-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------->
+
+    <!-- Botton Controls -->
+    <div id="controls">
+        <!-- Container for song-image and details -->
+        <div id="controls-song">
+            <div id="controls-song-image">
+                <img src="../assets/artist4.jpg" id="controls-song-img" />
+            </div>
+            <div id="controls-song-details">
+                <p>Treat You Better</p>
+                <p>Shawn Mendes</p>
+            </div>
+            <div id="controls-song-icons">
+                <i class="lar la-heart"></i>
+                <i class="las la-ban"></i>
+            </div>
+        </div>
+        <!-- Container for controls -->
+        <div id="mid-controls">
+            <div id="mid-controls-icons">
+                <div><i class="las la-random"></i></div>
+                <div><i class="las la-step-backward"></i></div>
+                <div style="display: none;"><i class="lar la-pause-circle play-pause"></i></div>
+                <div><i class="lar la-play-circle play-pause"></i></div>
+                <div><i class="las la-step-forward"></i></div>
+                <div><i class="las la-redo"></i></div>
+            </div>
+            <div id="mid-controls-dist">
+                <p>1:00</p>
+                <div id="mid-dist">
+                    <div id="mid-dist-dist"></div>
+                    <div id="mid-dist-circle"></div>
+                </div>
+                <p>4:53</p>
+            </div>
+        </div>
+        <!-- Container for sound and other controls -->
+        <div id="right-controls">
+            <div><i class="las la-tasks"></i></div>
+            <div><i class="las la-headphones-alt"></i></div>
+            <div id="right-controls-dist">
+                <div>
+                    <i class="las la-volume-up"></i>
+                </div>
+                <div id="right-dist">
+                    <div id="right-dist-dist"></div>
+                    <div id="right-dist-circle"></div>
+                </div>
+            </div>
+            <div><i style="display: none;" class="las la-volume-mute"></i></div>
+            <div><i style="transform: rotate(45deg);" class="las la-arrows-alt-v"></i></div>
+        </div>
+    </div>
+    <script type="text/javascript" src=""></script>
+</body>
+
+</html>
